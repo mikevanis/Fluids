@@ -14,6 +14,8 @@
 
 using namespace ci;
 
+#define MINVELOCITY 0.05f
+
 Particle::Particle() {
 
 }
@@ -21,10 +23,11 @@ Particle::Particle() {
 // Random velocity and destination
 Particle::Particle(Vec2f location) {
     loc = location;
-    dir = Vec2f(0, -1);
+    dir = Vec2f(0, 1);
     vel = 0.2f;
     radius = 3.0f;
-    acc = 0.1f;
+    acc = 0;
+    timer = 100;
 }
 
 // Predetermined velocity and destination
@@ -36,17 +39,34 @@ Particle::Particle(Vec2f location, Vec2f destination, float velocity) {
     radius = 3.0f;
 }
 
-void Particle::update() {
-    //vel += acc;
-    loc += dir * vel;
+void Particle::update(const Channel32f &channel) {
+    if(channel) {
+        float gray = channel.getValue(loc);
+        acc = mapValue(gray, 1.0f, 0.0f, 0.2f, -0.05);
+    }
+    vel += acc;
+    
+    if(vel<=0.05) loc += dir * 0.05;
+    else loc += dir * vel;
+    
+    timer -= 0.5f;
 }
 
 void Particle::draw() {
-    glColor3f(1, 0, 1);
-    gl::drawSolidCircle(loc, radius);
+    gl::color(Color(1, 0, 1));
+    gl::drawSolidCircle(loc, radius * (timer/100));
 }
 
-void Particle::setVector(Vec2f direction, float velocity) {
-    dir = direction;
-    vel = velocity;
+bool Particle::isDead() {
+    if(timer <= 0.0f) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+// Range mapping function (ported from Arduino) ----------------------------
+float Particle::mapValue(float x, float in_min, float in_max, float out_min, float out_max) {
+    return (x-in_min) * (out_max-out_min) / (in_max-in_min) + out_min;
 }

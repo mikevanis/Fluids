@@ -10,24 +10,23 @@
 #define Fluids_Particle_h
 
 #pragma once
-#include "cinder/Vector.h"
-
-#include <vector>
+#include "cinder/app/AppBasic.h"
 
 class Particle {
 public:
     Particle();
     Particle(ci::Vec2f location);
     Particle(ci::Vec2f location, ci::Vec2f destination, float velocity);
-    void update();
+    void update(const ci::Channel32f &channel);
     void draw();
-    void setVector(ci::Vec2f destination, float velocity);
+    bool isDead();
+    float mapValue(float x, float in_min, float in_max, float out_min, float out_max);
     
     ci::Vec2f loc;
     ci::Vec2f dir;
     float vel;
     float acc;
-    
+    float timer;
     float radius;
 };
 

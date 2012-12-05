@@ -29,7 +29,7 @@ public:
     ci::Vec2f dir;
     float str;
     
-    float arrowLength, headLength, headRadius;
+    float arrowLength, headLength, headRadius, zoneLength;
 };
 
 #endif

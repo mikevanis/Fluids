@@ -21,9 +21,10 @@ VectorPoint::VectorPoint(Vec2f location, Vec2f direction, float strength) {
     loc = location;
     dir = direction;
     str = strength;
-    arrowLength = 15.0f;
+    arrowLength = 5.0f;
+    zoneLength = 0;
     headLength = 6.0f;
-    headRadius = 3.0f;
+    headRadius = 3.0f;  
 }
 
 void VectorPoint::update() {
@@ -36,6 +37,7 @@ void VectorPoint::draw() {
     Vec3f drawDir(dir, 0.0f);
     gl::color(Color(0.2f, 0.2f, 0.2f));
     gl::drawVector(drawLoc, drawLoc + drawDir * arrowLength, headLength, headRadius);
+    gl::drawLine(drawLoc, drawLoc-drawDir*arrowLength);
 }
 
 void VectorPoint::setDirection(Vec2f direction) {

@@ -2,8 +2,8 @@ dependencies: \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/ParticleController.cpp \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/ParticleController.h \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/Particle.h \
-  ../../cinder_0.8.4_mac/include/cinder/Vector.h \
-  ../../cinder_0.8.4_mac/include/cinder/CinderMath.h \
+  ../../cinder_0.8.4_mac/include/cinder/app/AppBasic.h \
+  ../../cinder_0.8.4_mac/include/cinder/app/App.h \
   ../../cinder_0.8.4_mac/include/cinder/Cinder.h \
   ../../cinder_0.8.4_mac/boost/boost/cstdint.hpp \
   ../../cinder_0.8.4_mac/boost/boost/config.hpp \
@@ -42,13 +42,12 @@ dependencies: \
   ../../cinder_0.8.4_mac/boost/boost/smart_ptr/detail/yield_k.hpp \
   ../../cinder_0.8.4_mac/boost/boost/memory_order.hpp \
   ../../cinder_0.8.4_mac/boost/boost/smart_ptr/detail/operator_bool.hpp \
-  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/VectorPoint.h \
-  ../../cinder_0.8.4_mac/include/cinder/app/AppBasic.h \
-  ../../cinder_0.8.4_mac/include/cinder/app/App.h \
   ../../cinder_0.8.4_mac/include/cinder/app/Renderer.h \
   ../../cinder_0.8.4_mac/include/cinder/gl/gl.h \
   ../../cinder_0.8.4_mac/include/cinder/Exception.h \
   ../../cinder_0.8.4_mac/include/cinder/Quaternion.h \
+  ../../cinder_0.8.4_mac/include/cinder/CinderMath.h \
+  ../../cinder_0.8.4_mac/include/cinder/Vector.h \
   ../../cinder_0.8.4_mac/include/cinder/Matrix.h \
   ../../cinder_0.8.4_mac/include/cinder/Matrix22.h \
   ../../cinder_0.8.4_mac/include/cinder/MatrixAffine2.h \
@@ -493,6 +492,7 @@ dependencies: \
   ../../cinder_0.8.4_mac/include/cinder/Timer.h \
   ../../cinder_0.8.4_mac/include/cinder/Function.h \
   ../../cinder_0.8.4_mac/include/cinder/app/TouchEvent.h \
+  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/VectorPoint.h \
   ../../cinder_0.8.4_mac/include/cinder/Rand.h \
   ../../cinder_0.8.4_mac/boost/boost/random.hpp \
   ../../cinder_0.8.4_mac/boost/boost/random/additive_combine.hpp \

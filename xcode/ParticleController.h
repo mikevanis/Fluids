@@ -12,25 +12,39 @@
 #pragma once
 #include "Particle.h"
 #include "VectorPoint.h"
+#include "cinder/app/AppBasic.h"
 #include <list>
 
 class ParticleController {
 public:
     ParticleController();
     ParticleController(int res);
-    void update();
+    
+    void update(ci::Vec2i mouseLoc, bool settingMode, bool selectedVector, bool selectedDir, const ci::Channel32f &channel);
     void draw();
     void applyForces();
     void addParticle(int xi, int yi);
     void addVector(ci::Vec2f location, ci::Vec2f direction, int res);
     void addParticles(int amt);
     void removeParticles(int amt);
+    
     float mapValue(float x, float in_min, float in_max, float out_min, float out_max);
+    VectorPoint* getVectorOnLocation(ci::Vec2i &position);
+    
+    void saveListToFile(std::list<VectorPoint> mList, std::string fileName);
+    void openListFromFile(std::string fileName);
     
     std::list<Particle> particleList;
     std::list<VectorPoint> vectorList;
     
     int mXRes, mYRes;
+    
+    unsigned long lastFrames;
+    
+    bool autoParticles = false;
+    
+    VectorPoint* currentVector;
+    ci::Vec2f dirToCursor;
 };
 
 
