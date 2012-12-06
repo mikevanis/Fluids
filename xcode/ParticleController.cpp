@@ -51,12 +51,12 @@ void ParticleController::update(Vec2i mouseLoc, bool settingMode, bool selectedV
             currentVector->dir = dirToCursor;
         }
     }
-    app::console() << currentFrames-lastFrames << std::endl;
+    
     if(autoParticles) {
-        if(currentFrames-lastFrames >= 50) {
+        if(currentFrames-lastFrames >= 20) {
             if(particleList.size() < MAXPARTICLES) {
                 for(int x=0; x<mXRes; x++) {
-                    addParticle(x*30, 10);
+                    addParticle((x+0.5f)*40, 10);
                 }
             }
             lastFrames = currentFrames;

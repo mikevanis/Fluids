@@ -42,7 +42,7 @@ Particle::Particle(Vec2f location, Vec2f destination, float velocity) {
 void Particle::update(const Channel32f &channel) {
     if(channel) {
         float gray = channel.getValue(loc);
-        acc = mapValue(gray, 1.0f, 0.0f, 0.2f, -0.05);
+        acc = mapValue(gray, 1.0f, 0.0f, 0.2f, -0.2);
     }
     vel += acc;
     
@@ -53,7 +53,7 @@ void Particle::update(const Channel32f &channel) {
 }
 
 void Particle::draw() {
-    gl::color(Color(1, 0, 1));
+    gl::color(Color(0.4, 0.4, 1));
     gl::drawSolidCircle(loc, radius * (timer/100));
 }
 

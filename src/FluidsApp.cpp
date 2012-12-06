@@ -101,9 +101,6 @@ void FluidsApp::mouseDown(MouseEvent event) {
             selectedVector = false;
         }
     }
-    else {
-        console() << "Channel value: " << heatChannel.getValue(event.getPos()) << std::endl;
-    }
 }
 
 
