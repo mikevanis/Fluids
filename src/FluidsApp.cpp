@@ -34,6 +34,7 @@ class FluidsApp : public AppBasic {
     bool settingMode = false;
     bool selectedVector = false;
     bool selectedDir = false;
+    bool dynamicSetting = false;
     string fileName;
     string imgName;
     bool drawImage = false;
@@ -59,6 +60,7 @@ void FluidsApp::setup()
     mParams.addButton("AutoParticles", bind(&FluidsApp::toggleAutoParticles, this));
     mParams.addSeparator();
     mParams.addParam( "Set vectors", &settingMode);
+    mParams.addParam("Dynamic setting", &dynamicSetting);
     mParams.addSeparator();
     mParams.addParam("File name", &fileName, "");
     mParams.addButton("Save", bind(&FluidsApp::saveFile, this));
