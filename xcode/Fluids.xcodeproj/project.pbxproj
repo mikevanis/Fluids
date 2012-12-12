@@ -21,6 +21,7 @@
 		674C5F1B1662DB0700C2EC34 /* VectorPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 674C5F1A1662DB0700C2EC34 /* VectorPoint.cpp */; };
 		67CA0B8A165AB2F2004572CF /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67CA0B89165AB2F2004572CF /* Particle.cpp */; };
 		67CA0B8D165AB4B3004572CF /* ParticleController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67CA0B8C165AB4B3004572CF /* ParticleController.cpp */; };
+		67EBDC2C1678A597002F3B5B /* Quadrant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67EBDC2B1678A597002F3B5B /* Quadrant.cpp */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		67CA0B89165AB2F2004572CF /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		67CA0B8B165AB42A004572CF /* ParticleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
 		67CA0B8C165AB4B3004572CF /* ParticleController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleController.cpp; sourceTree = "<group>"; };
+		67EBDC291678A57B002F3B5B /* Quadrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quadrant.h; sourceTree = "<group>"; };
+		67EBDC2B1678A597002F3B5B /* Quadrant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quadrant.cpp; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Fluids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fluids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +82,7 @@
 				67CA0B89165AB2F2004572CF /* Particle.cpp */,
 				67CA0B8C165AB4B3004572CF /* ParticleController.cpp */,
 				674C5F1A1662DB0700C2EC34 /* VectorPoint.cpp */,
+				67EBDC2B1678A597002F3B5B /* Quadrant.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -137,6 +141,7 @@
 				67CA0B88165AB1AB004572CF /* Particle.h */,
 				67CA0B8B165AB42A004572CF /* ParticleController.h */,
 				674C5F181662D5EC00C2EC34 /* VectorPoint.h */,
+				67EBDC291678A57B002F3B5B /* Quadrant.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 				67CA0B8A165AB2F2004572CF /* Particle.cpp in Sources */,
 				67CA0B8D165AB4B3004572CF /* ParticleController.cpp in Sources */,
 				674C5F1B1662DB0700C2EC34 /* VectorPoint.cpp in Sources */,
+				67EBDC2C1678A597002F3B5B /* Quadrant.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

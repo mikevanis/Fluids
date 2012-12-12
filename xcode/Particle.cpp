@@ -45,6 +45,7 @@ void Particle::update(const Channel32f &channel) {
         acc = mapValue(gray, 1.0f, 0.0f, 0.2f, -0.2);
     }
     vel += acc;
+    vel *= 0.98;
     
     if(vel<=0.05) loc += dir * 0.05;
     else loc += dir * vel;
