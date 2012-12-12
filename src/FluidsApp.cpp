@@ -108,7 +108,7 @@ void FluidsApp::mouseDown(MouseEvent event) {
 
 void FluidsApp::update()
 {
-    mParticleController.applyForces();
+    mParticleController.applyQuadrantForces();
     mParticleController.update(mousePos, settingMode, selectedVector, selectedDir, heatChannel);
 }
 

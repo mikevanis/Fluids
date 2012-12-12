@@ -26,6 +26,8 @@ ParticleController::ParticleController(int res) {
     mXRes = app::getWindowWidth()/res;
     mYRes = app::getWindowHeight()/res;
     
+    vectorRes = res;
+    
     // Add vectors
     for (int y=0; y<mYRes; y++) {
         for(int x=0; x<mXRes; x++) {
@@ -34,6 +36,9 @@ ParticleController::ParticleController(int res) {
             addVector(Vec2f(x, y), direction, res);
         }
     }
+    
+    createQuadrantsFromVectors(res);
+    
     lastFrames = 0;
     app::console() << "Vectors added" << std::endl;
 }
@@ -93,6 +98,17 @@ void ParticleController::applyForces() {
     }
 }
 
+// Apply quadrant map influence to particles -------------------------------
+void ParticleController::applyQuadrantForces() {
+    for(list<Particle>::iterator p = particleList.begin(); p != particleList.end(); ++p) {
+        for(list<Quadrant>::iterator q = quadrantList.begin(); q != quadrantList.end(); ++q) {
+            if(q->isInQuadrant(p->loc)) {
+                p->dir = q->getAverageDirection(p->loc);
+            }
+        }
+    }
+}
+
 // Add a single particle to the particle list ------------------------------
 void ParticleController::addParticle(int xi, int yi) {
     particleList.push_back(Particle(Vec2f(xi, yi)));
@@ -123,6 +139,20 @@ void ParticleController::removeParticles(int amt) {
     }
 }
 
+// Create a list of quadrants from a list of vectors
+void ParticleController::createQuadrantsFromVectors(int res) {
+    for(int y=0; y<mYRes-1; y++) {
+        for(int x=0; x<mXRes-1; x++) {
+            int arrayPos = y*mXRes + x;
+            VectorPoint* v1 = getVectorOnLocation(arrayPos, y, res);
+            VectorPoint* v2 = getVectorOnLocation(arrayPos+1, y, res);
+            VectorPoint* v3 = getVectorOnLocation(arrayPos, y+1, res);
+            VectorPoint* v4 = getVectorOnLocation(arrayPos+1, y+1, res);
+            quadrantList.push_back(Quadrant(v1, v2, v3, v4));
+        }
+    }
+}
+
 // Range mapping function (ported from Arduino) ----------------------------
 float ParticleController::mapValue(float x, float in_min, float in_max, float out_min, float out_max) {
     return (x-in_min) * (out_max-out_min) / (in_max-in_min) + out_min;
@@ -131,6 +161,25 @@ float ParticleController::mapValue(float x, float in_min, float in_max, float ou
 // Find vector nearest to a location ---------------------------------------
 VectorPoint* ParticleController::getVectorOnLocation(Vec2i &position) {
     VectorPoint* foundVector;
+    for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+        Vec2f *dir = new (std::nothrow) Vec2f(position - v->loc);
+        float distSqrd = dir->lengthSquared();
+        float zoneRadiusSqrd = v->zoneLength * v->zoneLength;
+        if(distSqrd <= zoneRadiusSqrd) {
+            foundVector = &*v;
+            break;
+        }
+        delete dir;
+        dir = NULL;
+    }
+    return foundVector;
+}
+
+VectorPoint* ParticleController::getVectorOnLocation(int x, int y, int res) {
+    VectorPoint* foundVector;
+    x *= res;
+    y *= res;
+    Vec2i position = Vec2i(x, y);
     for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
         Vec2f *dir = new (std::nothrow) Vec2f(position - v->loc);
         float distSqrd = dir->lengthSquared();
@@ -167,6 +216,8 @@ void ParticleController::saveListToFile(list<VectorPoint> mList, string fileName
 
 void ParticleController::openListFromFile(string fileName) {
     vectorList.clear();
+    quadrantList.clear();
+    
     string line;
     ifstream mFile;
     
@@ -199,4 +250,6 @@ void ParticleController::openListFromFile(string fileName) {
             vectorList.push_back(newVector);
         }
     }
+    
+    createQuadrantsFromVectors(vectorRes);
 }

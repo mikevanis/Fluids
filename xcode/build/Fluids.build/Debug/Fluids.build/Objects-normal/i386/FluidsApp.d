@@ -1080,4 +1080,5 @@ dependencies: \
   ../../cinder_0.8.4_mac/include/cinder/gl/Texture.h \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/ParticleController.h \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/Particle.h \
-  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/VectorPoint.h
+  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/VectorPoint.h \
+  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/Quadrant.h
