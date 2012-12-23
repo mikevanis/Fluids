@@ -76,7 +76,7 @@ void ParticleController::update(Vec2i mouseLoc, bool settingMode, bool selectedV
 
 // Draw vector map and particles -------------------------------------------
 void ParticleController::draw() {
-    for(list<VectorPoint>::iterator v=vectorList.begin(); v!= vectorList.end(); ++v) {
+    for(vector<VectorPoint>::iterator v=vectorList.begin(); v!= vectorList.end(); ++v) {
         v->draw();
     }
     for(list<Particle>::iterator p=particleList.begin(); p != particleList.end(); ++p) {
@@ -91,7 +91,7 @@ void ParticleController::draw() {
 // Apply vector map influence to particles ----------------------------------
 void ParticleController::applyForces() {
     for(list<Particle>::iterator p = particleList.begin(); p != particleList.end(); ++p) {
-        for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+        for(vector<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
             Vec2f dir = p->loc - v->loc;
             float distSqrd = dir.lengthSquared();
             float zoneRadiusSqrd = v->zoneLength * v->zoneLength;
@@ -168,7 +168,7 @@ float ParticleController::mapValue(float x, float in_min, float in_max, float ou
 // Find vector nearest to a location ---------------------------------------
 VectorPoint* ParticleController::getVectorOnLocation(Vec2i &position) {
     VectorPoint* foundVector;
-    for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+    for(vector<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
         Vec2f *dir = new (std::nothrow) Vec2f(position - v->loc);
         float distSqrd = dir->lengthSquared();
         float zoneRadiusSqrd = v->zoneLength * v->zoneLength;
@@ -188,7 +188,7 @@ VectorPoint* ParticleController::getVectorFromCoordinate(int x, int y, int res) 
     y *= res;
     Vec2i position = Vec2i(x, y);
     VectorPoint blankVector = VectorPoint(Vec2f(0, 0), Vec2f(0, 1), 0.1f);
-    for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+    for(vector<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
         if(v->loc == position) {
             foundVector = &*v;
             break;
@@ -205,7 +205,7 @@ VectorPoint* ParticleController::getVectorOnLocation(int x, int y, int res) {
     x *= res;
     y *= res;
     Vec2i position = Vec2i(x, y);
-    for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+    for(vector<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
         Vec2f *dir = new (std::nothrow) Vec2f(position - v->loc);
         float distSqrd = dir->lengthSquared();
         float zoneRadiusSqrd = v->zoneLength * v->zoneLength;

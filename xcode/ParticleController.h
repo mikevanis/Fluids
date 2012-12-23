@@ -15,6 +15,7 @@
 #include "Quadrant.h"
 #include "cinder/app/AppBasic.h"
 #include <list>
+#include <vector>
 
 class ParticleController {
 public:
@@ -40,7 +41,7 @@ public:
     void openListFromFile(std::string fileName);
     
     std::list<Particle> particleList;
-    std::list<VectorPoint> vectorList;
+    std::vector<VectorPoint> vectorList;
     std::list<Quadrant> quadrantList;
     
     int mXRes, mYRes;
