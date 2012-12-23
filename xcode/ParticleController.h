@@ -34,6 +34,7 @@ public:
     float mapValue(float x, float in_min, float in_max, float out_min, float out_max);
     VectorPoint* getVectorOnLocation(ci::Vec2i &position);
     VectorPoint* getVectorOnLocation(int x, int y, int res);
+    VectorPoint* getVectorFromCoordinate(int x, int y, int res);
     
     void saveListToFile(std::list<VectorPoint> mList, std::string fileName);
     void openListFromFile(std::string fileName);

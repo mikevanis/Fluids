@@ -82,6 +82,10 @@ void ParticleController::draw() {
     for(list<Particle>::iterator p=particleList.begin(); p != particleList.end(); ++p) {
         p->draw();
     }
+    for(list<Quadrant>::iterator q=quadrantList.begin(); q != quadrantList.end(); ++q) {
+        q->draw();
+    }
+    
 }
 
 // Apply vector map influence to particles ----------------------------------
@@ -141,14 +145,17 @@ void ParticleController::removeParticles(int amt) {
 
 // Create a list of quadrants from a list of vectors
 void ParticleController::createQuadrantsFromVectors(int res) {
+    app::console() << "Creating quadrants..." << std::endl;
     for(int y=0; y<mYRes-1; y++) {
         for(int x=0; x<mXRes-1; x++) {
-            int arrayPos = y*mXRes + x;
-            VectorPoint* v1 = getVectorOnLocation(arrayPos, y, res);
-            VectorPoint* v2 = getVectorOnLocation(arrayPos+1, y, res);
-            VectorPoint* v3 = getVectorOnLocation(arrayPos, y+1, res);
-            VectorPoint* v4 = getVectorOnLocation(arrayPos+1, y+1, res);
+            VectorPoint* v1 = getVectorFromCoordinate(x, y, res);
+            VectorPoint* v2 = getVectorFromCoordinate(x+1, y, res);
+            VectorPoint* v3 = getVectorFromCoordinate(x, y+1, res);
+            VectorPoint* v4 = getVectorFromCoordinate(x+1, y+1, res);
             quadrantList.push_back(Quadrant(v1, v2, v3, v4));
+            
+            app::console() << v1->loc << std::endl;
+            //app::console() << x << "," << y << std::endl;
         }
     }
 }
@@ -171,6 +178,24 @@ VectorPoint* ParticleController::getVectorOnLocation(Vec2i &position) {
         }
         delete dir;
         dir = NULL;
+    }
+    return foundVector;
+}
+
+VectorPoint* ParticleController::getVectorFromCoordinate(int x, int y, int res) {
+    VectorPoint* foundVector;
+    x *= res;
+    y *= res;
+    Vec2i position = Vec2i(x, y);
+    VectorPoint blankVector = VectorPoint(Vec2f(0, 0), Vec2f(0, 1), 0.1f);
+    for(list<VectorPoint>::iterator v = vectorList.begin(); v != vectorList.end(); ++v) {
+        if(v->loc == position) {
+            foundVector = &*v;
+            break;
+        }
+        else {
+            foundVector = &blankVector;
+        }
     }
     return foundVector;
 }

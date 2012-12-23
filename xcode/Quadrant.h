@@ -13,11 +13,14 @@
 
 #include "cinder/Vector.h"
 #include "VectorPoint.h"
+#include "cinder/app/AppBasic.h"
+#include "cinder/gl/gl.h"
 
 class Quadrant {
 public:
     Quadrant();
     Quadrant(VectorPoint *v1, VectorPoint *v2, VectorPoint *v3, VectorPoint *v4);
+    void draw();
     bool isInQuadrant(ci::Vec2f location);
     ci::Vec2f getAverageDirection(ci::Vec2f location);
     
