@@ -18,9 +18,8 @@ Quadrant::Quadrant(VectorPoint *v1, VectorPoint *v2, VectorPoint *v3, VectorPoin
 }
 
 void Quadrant::draw() {
-    gl::enableAlphaBlending();
-    gl::color(1, 1, 1, 0.4f);
-    gl::drawSolidRect(Rectf(vector1->loc.x, vector1->loc.y, vector4->loc.x, vector4->loc.y));
+    gl::color(1, 1, 1);
+    gl::drawStrokedRect(Rectf(vector1->loc.x, vector1->loc.y, vector4->loc.x, vector4->loc.y));
 }
 
 Vec2f Quadrant::getAverageDirection(Vec2f location) {

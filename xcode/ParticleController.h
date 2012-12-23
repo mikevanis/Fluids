@@ -37,7 +37,7 @@ public:
     VectorPoint* getVectorOnLocation(int x, int y, int res);
     VectorPoint* getVectorFromCoordinate(int x, int y, int res);
     
-    void saveListToFile(std::list<VectorPoint> mList, std::string fileName);
+    void saveListToFile(std::vector<VectorPoint> mList, std::string fileName);
     void openListFromFile(std::string fileName);
     
     std::list<Particle> particleList;

@@ -148,10 +148,14 @@ void ParticleController::createQuadrantsFromVectors(int res) {
     app::console() << "Creating quadrants..." << std::endl;
     for(int y=0; y<mYRes-1; y++) {
         for(int x=0; x<mXRes-1; x++) {
-            VectorPoint* v1 = getVectorFromCoordinate(x, y, res);
-            VectorPoint* v2 = getVectorFromCoordinate(x+1, y, res);
-            VectorPoint* v3 = getVectorFromCoordinate(x, y+1, res);
-            VectorPoint* v4 = getVectorFromCoordinate(x+1, y+1, res);
+            int vector1Index = y * mXRes + x;
+            int vector2Index = y * mXRes + x + 1;
+            int vector3Index = (y+1) * mXRes + x;
+            int vector4Index = (y+1) * mXRes + x + 1;
+            VectorPoint* v1 = &vectorList.at(vector1Index);
+            VectorPoint* v2 = &vectorList.at(vector2Index);
+            VectorPoint* v3 = &vectorList.at(vector3Index);
+            VectorPoint* v4 = &vectorList.at(vector4Index);
             quadrantList.push_back(Quadrant(v1, v2, v3, v4));
             
             app::console() << v1->loc << std::endl;
@@ -219,10 +223,10 @@ VectorPoint* ParticleController::getVectorOnLocation(int x, int y, int res) {
     return foundVector;
 }
 
-void ParticleController::saveListToFile(list<VectorPoint> mList, string fileName) {
+void ParticleController::saveListToFile(vector<VectorPoint> mList, string fileName) {
     ofstream mFile;
     mFile.open(fileName.c_str());
-    for(list<VectorPoint>::iterator v= mList.begin(); v != mList.end(); ++v) {
+    for(vector<VectorPoint>::iterator v= mList.begin(); v != mList.end(); ++v) {
         if(mFile.is_open()) {
             mFile << v->loc.x << ",";
             mFile << v->loc.y << ",";

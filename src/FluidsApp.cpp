@@ -123,10 +123,6 @@ void FluidsApp::draw()
     }
     mParticleController.draw();
     
-    gl::enableAlphaBlending();
-    gl::color(1.0f, 1.0f, 1.0f, 0.2f);
-    gl::drawSolidRect(Rectf(10, 10, 1000, 700));
-    
     params::InterfaceGl::draw();
 }
 
