@@ -82,10 +82,6 @@ void ParticleController::draw() {
     for(list<Particle>::iterator p=particleList.begin(); p != particleList.end(); ++p) {
         p->draw();
     }
-    for(list<Quadrant>::iterator q=quadrantList.begin(); q != quadrantList.end(); ++q) {
-        q->draw();
-    }
-    
 }
 
 // Apply vector map influence to particles ----------------------------------
@@ -108,6 +104,7 @@ void ParticleController::applyQuadrantForces() {
         for(list<Quadrant>::iterator q = quadrantList.begin(); q != quadrantList.end(); ++q) {
             if(q->isInQuadrant(p->loc)) {
                 p->dir = q->getAverageDirection(p->loc);
+                app::console() << p->dir << std::endl;
             }
         }
     }

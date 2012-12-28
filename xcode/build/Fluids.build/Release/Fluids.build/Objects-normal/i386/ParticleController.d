@@ -493,6 +493,7 @@ dependencies: \
   ../../cinder_0.8.4_mac/include/cinder/Function.h \
   ../../cinder_0.8.4_mac/include/cinder/app/TouchEvent.h \
   /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/VectorPoint.h \
+  /Users/mikevanis/Dropbox/My\ Files/Cinder/Fluids/xcode/Quadrant.h \
   ../../cinder_0.8.4_mac/include/cinder/Rand.h \
   ../../cinder_0.8.4_mac/boost/boost/random.hpp \
   ../../cinder_0.8.4_mac/boost/boost/random/additive_combine.hpp \
