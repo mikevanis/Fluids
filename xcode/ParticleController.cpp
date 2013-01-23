@@ -58,11 +58,11 @@ void ParticleController::update(Vec2i mouseLoc, bool settingMode, bool selectedV
     }
     
     if(autoParticles) {
-        if(currentFrames-lastFrames >= 20) {
+        if(Rand::randInt(100) > 50) {
             if(particleList.size() < MAXPARTICLES) {
-                for(int x=0; x<mXRes; x++) {
-                    addParticle((x+0.5f)*40, 10);
-                }
+                float x = Rand::randFloat(app::getWindowWidth());
+                float y = -5.0;
+                particleList.push_back(Particle(Vec2f(x, y)));
             }
             lastFrames = currentFrames;
         }
@@ -154,8 +154,6 @@ void ParticleController::createQuadrantsFromVectors(int res) {
             VectorPoint* v3 = &vectorList.at(vector3Index);
             VectorPoint* v4 = &vectorList.at(vector4Index);
             quadrantList.push_back(Quadrant(v1, v2, v3, v4));
-            
-            app::console() << v1->loc << std::endl;
             //app::console() << x << "," << y << std::endl;
         }
     }

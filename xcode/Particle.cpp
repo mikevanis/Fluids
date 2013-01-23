@@ -17,7 +17,7 @@ using namespace std;
 
 #define MINVELOCITY 0.05f
 #define HISTORY 50
-#define STEP 10
+#define STEP 6
 
 Particle::Particle() {
 
@@ -30,7 +30,7 @@ Particle::Particle(Vec2f location) {
     vel = 0.2f;
     radius = 3.0f;
     acc = 0;
-    timer = 100;
+    timer = 250;
     
     currentStep = 0;
 }
@@ -47,10 +47,10 @@ Particle::Particle(Vec2f location, Vec2f destination, float velocity) {
 void Particle::update(const Channel32f &channel) {
     if(channel) {
         float gray = channel.getValue(loc);
-        acc = mapValue(gray * 0.75, 1.0f, 0.0f, 0.2f, -0.2);
+        acc = mapValue(gray, 1.0f, 0.0f, 0.0f, -0.02f);
     }
-    vel += acc;
-    vel *= 0.98;
+    vel += 0.1;
+    vel *= (0.98 + acc);
     
     if(vel<=0.05) loc += dir * 0.05;
     else loc += dir * vel;
@@ -66,12 +66,18 @@ void Particle::update(const Channel32f &channel) {
 }
 
 void Particle::draw() {
-    gl::color(Color(0.4, 0.4, 1));
+    gl::color(Color(1, 1, 1));
     //gl::drawSolidCircle(loc, radius * (timer/100));
     
-    int counter = 0;
+    
     
     // Draw point array
+    for(int i = 0; i < prevLocations.size()-1; i++) {
+        gl::drawLine(prevLocations.at(i), prevLocations.at(i+1));
+    }
+    
+    /*
+    int counter = 0;
     for(vector<Vec2f>::iterator v = prevLocations.begin(); v != prevLocations.end(); ++v) {
         if(counter % STEP == currentStep) {
             gl::drawSolidCircle(*v, 1);
@@ -79,9 +85,11 @@ void Particle::draw() {
         
         counter++;
     }
-    
     currentStep++;
     if(currentStep >= STEP) currentStep = 0;
+    */
+    
+    
 }
 
 bool Particle::isDead() {

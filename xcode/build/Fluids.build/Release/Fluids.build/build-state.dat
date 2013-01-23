@@ -5,13 +5,12 @@ cCheck dependencies
 cProcessInfoPlistFile "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/Info.plist" Info.plist
 cCpResource CinderApp.icns ./build/Release/Fluids.app/Contents/Resources/CinderApp.icns
 cProcessPCH++ /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch.pth Fluids_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/VectorPoint.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/VectorPoint.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/VectorPoint.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/VectorPoint.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 cLd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids" normal i386
-cTouch "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app"
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
 c0000000050D76C2500000000000000AA
@@ -5464,9 +5463,9 @@ t1336782579
 s3804
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp
-c0000000050F688A800000000000011A7
-t1358334120
-s4519
+c0000000050FFBB9700000000000011E6
+t1358936983
+s4582
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Fluids.LinkFileList
 c0000000050D7978D0000000000000289
@@ -5474,19 +5473,19 @@ t1356306317
 s649
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o
-t1358334150
-s35288
+t1358942951
+s37196
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o
-t1356306320
-s3116
+t1358942951
+s4808
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o
-t1356306320
-s19212
+t1358942951
+s21380
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o
-t1356306319
+t1358942950
 s2376
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/VectorPoint.o
@@ -5494,7 +5493,7 @@ t1355310109
 s2536
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app
-t1358334150
+t1358942952
 s102
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/Info.plist
@@ -5502,8 +5501,8 @@ t1357685948
 s1218
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids
-t1358334150
-s984352
+t1358942952
+s989080
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/PkgInfo
 t1357685948
@@ -5525,19 +5524,19 @@ s147
 i<Cocoa/Cocoa.h>
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cpp
-c0000000050C8914200000000000005B6
-t1355321666
-s1462
+c0000000050FFD6D600000000000008B8
+t1358943958
+s2232
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.h
-c0000000050BE8A81000000000000026D
-t1354664577
-s621
+c0000000050FFD28F00000000000002C8
+t1358942863
+s712
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp
-c0000000050D794B4000000000000264A
-t1356305588
-s9802
+c0000000050FFC2570000000000002673
+t1358938711
+s9843
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.h
 c0000000050D6E4D20000000000000618
@@ -5545,9 +5544,9 @@ t1356260562
 s1560
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp
-c0000000050D7970F0000000000000563
-t1356306191
-s1379
+c0000000050FFC5530000000000000580
+t1358939475
+s1408
 
 N/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.h
 c0000000050D1EC7F000000000000026C
@@ -5590,11 +5589,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb682bed668a9b641^34f8bfd668a9b641^---0#1#0#--18"Check dependencies36"52BB6BC2-377D-4180-AB50-BD2E5CF8D323-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc5fe3a560eb0b641^30f63e560eb0b641^---0#1#0#--18"Check dependencies36"854F9987-DB11-4F6E-9557-153BBD9BAADB-
 
 CCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s380026947.844316
-e380026950.296808
+s380635748.702506
+e380635751.968182
 r1
 xCompileC
 x./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o
@@ -5603,11 +5602,11 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp8c48d843c0a6b641^26fb4b46c0a6b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp0000000000000000^2806"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o ../src/FluidsApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o"36"82D62EA8-1088-43A0-BC77-91E6C880A36D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cppb7f1b3640ab0b641^d7daf7670ab0b641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp0000000000000000^2806"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o ../src/FluidsApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/../src/FluidsApp.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/FluidsApp.o"36"114B4AD1-A7C8-48F2-A479-0D633A95FCF6-
 
 CCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s377999117.547048
-e377999120.385245
+s380636758.372266
+e380636760.894568
 r1
 xCompileC
 x./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o
@@ -5616,11 +5615,11 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cppa0388c0dcf87b641^7b9f6210cf87b641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/Particle.cpp0000000000000000^2786"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o"36"12BE3822-DB15-47D3-BE4D-6FDC7D9B1253-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cppb16f5f560eb0b641^7902e5580eb0b641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/Particle.cpp0000000000000000^2786"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o Particle.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Particle.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Particle.o"36"3CB04D56-25AF-46C3-BFAB-991D933480D8-
 
 CCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s377999117.547110
-e377999120.434166
+s380635748.702536
+e380635751.899201
 r1
 xCompileC
 x./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o
@@ -5629,11 +5628,11 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp8c318c0dcf87b641^3e256f10cf87b641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/ParticleController.cpp0000000000000000^2846"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o"36"18F84736-DBE8-464C-97DB-0809888107D2-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp5ef2b3640ab0b641^7b33e6670ab0b641^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/ParticleController.cpp0000000000000000^2846"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o ParticleController.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/ParticleController.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/ParticleController.o"36"5B0A4476-40C1-46A5-885F-CA8FCCEA4D85-
 
 CCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s377999117.547261
-e377999119.682066
+s380635748.702540
+e380635750.869274
 r1
 xCompileC
 x./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o
@@ -5642,7 +5641,7 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp26358c0dcf87b641^5a9bae0fcf87b641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/Quadrant.cpp0000000000000000^2786"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o Quadrant.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o"36"E1ED12FB-8DE0-4803-9236-4BDFD1F57F37-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cppadf7b3640ab0b641^8940e1660ab0b641^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/Quadrant.cpp0000000000000000^2786"CompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o Quadrant.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -include /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch -MMD -MT dependencies -MF "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.d" --serialize-diagnostics "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.dia" -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Quadrant.cpp" -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Quadrant.o"36"E9B1C953-A237-41B4-8DBA-CC49384B442C-
 
 CCompileC ./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/VectorPoint.o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/VectorPoint.cpp" normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s377002907.399640
@@ -5667,14 +5666,14 @@ x./build/Release/Fluids.app/Contents/Resources/CinderApp.icns
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy ./build/Release/Fluids.app/Contents/Resources/CinderApp.icnsd5b02b278976b641^b9512c278976b641^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/Resources/CinderApp.icns000000000080d041^561"CpResource CinderApp.icns ./build/Release/Fluids.app/Contents/Resources/CinderApp.icns    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/CinderApp.icns" "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/Resources"36"51CD95B2-2A21-475A-A5D4-E83431A2EDD0-
 
 CLd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids" normal i386
-s380026950.303639
-e380026950.520022
+s380636760.901429
+e380636761.354668
 r1
 xLd
 x/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids
 xnormal
 xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluidsb8cc4d46c0a6b641^3a208546c0a6b641^---0#0#0#--1071"Ld ./build/Release/Fluids.app/Contents/MacOS/Fluids normal i386    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk "-L/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -filelist "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Fluids.LinkFileList" -mmacosx-version-min=10.5 -dead_strip ../../cinder_0.8.4_mac/lib/libcinder.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids"36"23ECA363-1AB3-48BF-8B5E-C2217EF800CB-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Link /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids28d5e6580eb0b641^b8cb5a590eb0b641^---0#0#0#--1071"Ld ./build/Release/Fluids.app/Contents/MacOS/Fluids normal i386    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv MACOSX_DEPLOYMENT_TARGET 10.5    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk "-L/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" -filelist "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Objects-normal/i386/Fluids.LinkFileList" -mmacosx-version-min=10.5 -dead_strip ../../cinder_0.8.4_mac/lib/libcinder.a -lcurl -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/MacOS/Fluids"36"0902DC5D-A98E-465E-BB55-9428C9764E75-
 
 CProcessInfoPlistFile "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app/Contents/Info.plist" Info.plist
 s379378748.821131
@@ -5702,10 +5701,10 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Precompile Fluids_Prefix.pch4f75609b9b78b641^b08d649b9b78b641^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/mikevanis/Dropbox/My%20Files/Cinder/Fluids/xcode/Fluids_Prefix.pch0000000000000000^2815"ProcessPCH++ /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch.pth Fluids_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O3 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -ffast-math -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.5 -Wno-sign-conversion -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-generated-files.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-own-target-headers.hmap" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-all-target-headers.hmap" -iquote "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/Fluids-project-headers.hmap" -iquote../../cinder_0.8.4_mac/include -iquote../include "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release/include" -I../../cinder_0.8.4_mac/boost "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources/i386" "-I/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Fluids.build/Release/Fluids.build/DerivedSources" "-F/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/build/Release" --serialize-diagnostics /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch.dia -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/Fluids_Prefix.pch" -o /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/rh/12psszp95zbgt31jzp54wrnr0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Fluids_Prefix-cfcxqqfvovetxibrncjsxwzzptor/Fluids_Prefix.pch.d36"989DF9BA-5059-42D6-ABD5-80E5DB6AB791-
 
 CTouch "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app"
-s380026950.527767
-e380026950.532635
+s380635752.234647
+e380635752.239854
 r1
 xTouch
 x/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Touch /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app9e268746c0a6b641^d55a8846c0a6b641^---0#0#0#--201"Touch ./build/Release/Fluids.app    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    /usr/bin/touch -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app"36"672E93BC-1889-4C95-960B-86209D0A5C41-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Touch /Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app361e3c680ab0b641^66673d680ab0b641^---0#0#0#--201"Touch ./build/Release/Fluids.app    cd "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode"    /usr/bin/touch -c "/Users/mikevanis/Dropbox/My Files/Cinder/Fluids/xcode/./build/Release/Fluids.app"36"83C6E57A-2B6C-46FB-B786-EBBCE0549E43-
 

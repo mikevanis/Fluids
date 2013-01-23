@@ -35,7 +35,11 @@ Vec2f Quadrant::getAverageDirection(Vec2f location) {
     
     float totalDist = dist1 + dist2 + dist3 + dist4;
     
-    Vec2f averageDirection = vector1->dir*(1-dist1/totalDist) + vector2->dir*(1-dist2/totalDist) + vector3->dir*(1-dist3/totalDist) + vector4->dir*(1-dist4/totalDist);
+    Vec2f averageDirection = vector1->dir*(1-dist1/totalDist)
+        + vector2->dir*(1-dist2/totalDist)
+        + vector3->dir*(1-dist3/totalDist)
+        + vector4->dir*(1-dist4/totalDist);
+    
     averageDirection.safeNormalize();
     
     return averageDirection;
