@@ -106,11 +106,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../src/FluidsApp.cpp"
-         timestampString = "376360684.788138"
+         timestampString = "380629788.221903"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "63"
-         endingLineNumber = "63"
+         startingLineNumber = "66"
+         endingLineNumber = "66"
          landmarkName = "FluidsApp::setup()"
          landmarkType = "5">
       </FileBreakpoint>
@@ -130,11 +130,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../src/FluidsApp.cpp"
-         timestampString = "377997581.925751"
+         timestampString = "380629788.221903"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
+         startingLineNumber = "152"
+         endingLineNumber = "152"
          landmarkName = "FluidsApp::loadHeatImg()"
          landmarkType = "5">
       </FileBreakpoint>
@@ -152,7 +152,7 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ParticleController.cpp"
@@ -176,6 +176,19 @@
          endingLineNumber = "55"
          landmarkName = "ParticleController::update(Vec2i mouseLoc, bool settingMode, bool selectedVector, bool selectedDir, const Channel32f &amp;channel)"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Particle.h"
+         timestampString = "380630352.074023"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
+         landmarkName = "class Particle"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

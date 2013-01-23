@@ -11,6 +11,7 @@
 
 #pragma once
 #include "cinder/app/AppBasic.h"
+#include <vector>
 
 class Particle {
 public:
@@ -28,6 +29,10 @@ public:
     float acc;
     float timer;
     float radius;
+    
+    int currentStep;
+    
+    std::vector<ci::Vec2f> prevLocations;
 };
 
 #endif

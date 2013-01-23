@@ -55,6 +55,9 @@ void FluidsApp::setup()
 {
     mParticleController = ParticleController(RESOLUTION);
     
+    fileName = "atoll.txt";
+    imgName = "atollnew.jpg";
+    
     // Params setup
     mParams = params::InterfaceGl("Control panel", Vec2i(200, 400));
     mParams.addButton("AutoParticles", bind(&FluidsApp::toggleAutoParticles, this));
